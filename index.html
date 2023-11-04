@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <title>Maqueta HTML</title>
+    <style>
+        /*-- Estilo para maqueta --*/
+        body {
+            background-color: #c1c5e0;
+            margin: 0;
+            padding: 0;
+            font-family: 'Edu TAS Beginner';
+        }
+
+        header {
+            background-color: #FF999A;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23FFEDE8' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23FFEDE8'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #3e2c41;
+            color: #fff;
+            width: 200px;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+            position: fixed;
+            overflow: hidden;
+        }
+
+        main {
+            padding: 20px;
+            margin-left: 220px;
+        }
+
+        footer {
+            background-color: #FF999A;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23FFEDE8' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23FFEDE8'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: #fce5e6; font-weight: 600;">Tipos de Magia en Calabozos y Dragones</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#abj">Abjuracion</a></li>
+            <li><a href="#adv">Adivinacion</a></li>
+            <li><a href="#con">Conjuracion</a></li>
+            <li><a href="#enc">Encantamiento</a></li>
+            <li><a href="#ev">Evocacion</a></li>
+            <li><a href="#ilu">Ilusionismo</a></li>
+            <li><a href="#nig">Nigromancia</a></li>
+            <li><a href="#trans">Transmutacion</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div id="explic" style="text-align: center; color: #454447;">
+            <h2>¿Que es la magia? ¿Por que hay escuelas de magia?</h2>
+            <p style="font-weight: 500;">Las escuelas de magia existen para reflejar el enfoque y la especializacion de
+                los lanzadores de
+                conjuros.
+                Estas escuelas permiten a los personajes magicos desarrollar habilidades especificas y profundizar en
+                ciertos aspectos de la magia.</p>
+            <ul style="list-style: none; font-weight: 500;"">
+                Algunas razones pueden ser:
+                <li>Diversidad de estilos de magia</li>
+                <li>Progresion y desarrollo del personaje</li>
+                <li>Roles y especializaciones claras</li>
+                <li>Personalizacion y distintividad</li>
+            </ul>
+        </div>
+        <div id=" escue">
+                <script>
+                    // Funcion para mostrar/ocultar la informacion al presionar los botones
+                    function mostrarInformacion(id) {
+                        var informacion = document.getElementById(id);
+                        if (informacion.style.display === "none") {
+                            informacion.style.display = "block";
+                        } else {
+                            informacion.style.display = "none";
+                        }
+                    }
+                </script>
+
+                <h3 style="text-align: center; color: #454447; font-size: 30px;">Escuelas de Magia</h3>
+
+                <ul class="boton-lista">
+                    <li>
+                        <div id="abj" class="boton" onclick="mostrarInformacion('opcion1')">Abjuracion</div>
+                        <div id="opcion1" class="informacion">La Escuela de la Abjuracion es la que esta centrada en la
+                            Defensa y la Proteccion. Cualquier conjuro que advierta de un peligro o nos proteja del daño
+                            pertenece a esta escuela. Puede que no sea una escuela demasiado espectacular que haga que
+                            tus enemigos exploten en mil pedazos, pero tiene alguno de los conjuros mas versatiles y
+                            utiles del repertorio de cualquier lanzador de conjuros sensato.</div>
+                    </li>
+                    <li>
+                        <div id="adv" class="boton" onclick="mostrarInformacion('opcion2')">Adivinacion</div>
+                        <div id="opcion2" class="informacion">La Escuela de la Adivinacion se centra en lo Oculto, en el
+                            conocimiento mas alla de las ataduras mortales, en traspasar los engaños de la mente y ver
+                            la verdad de las cosas, e incluso en levantar las nieblas del futuro y echar un rapido
+                            vistazo. Su utilidad esta alejada de las situaciones de combate, pero se convierte en una
+                            ferrea aliada en situaciones sociales o para preparar situaciones peligrosas.</div>
+                    </li>
+                    <li>
+                        <div id="con" class="boton" onclick="mostrarInformacion('opcion3')">Conjuracion</div>
+                        <div id="opcion3" class="informacion">La Escuela de Conjuracion se centra en dos tipos de
+                            hechizos: aquellos que tienen que ver con la modificacion del tiempo y el espacio
+                            atravesando dimensiones y planos de existencia, y los que permiten convocar objetos y
+                            elementos de la nada que dañen a tus adversarios.</div>
+                    </li>
+                    <li>
+                        <div id="enc" class="boton" onclick="mostrarInformacion('opcion4')">Encantamiento</div>
+                        <div id="opcion4" class="informacion">La Escuela de Encantamiento es tambien una de esas que
+                            saca su mayor partido fuera del terreno de combate y que puede ayudar mucho a una clase a
+                            rolear y a obtener informacion, aunque a niveles altos se puede mostrar como decisiva en un
+                            duro enfrentamiento.</div>
+                    </li>
+                    <li>
+                        <div id="ev" class="boton" onclick="mostrarInformacion('opcion5')">Evocacion</div>
+                        <div id="opcion5" class="informacion">Evocacion es la escuela que contiene el mayor numero de
+                            conjuros ofensivos de todas. Es la Escuela de la Bola de Fuego, del Muro de Fuerza, del
+                            Proyectil Magico, de la Rociada Prismatica, de Rayo de Hechiceria, del Terremoto...
+                            <br>
+                            Si quieres hacer pupa a tus enemigos de forma directa, quemandolos, congelandolos, haciendo
+                            que les caiga encima rocas, esta deberia ser tu escuela favorita... Curiosamente, esta
+                            tambien es la escuela de los conjuros de curacion ya que, en cierta medida, la energia
+                            positiva se considera un tipo de elemento.
+                        </div>
+                    </li>
+                    <li>
+                        <div id="ilu" class="boton" onclick="mostrarInformacion('opcion6')">Ilusionismo</div>
+                        <div id="opcion6" class="informacion">El Ilusionismo es la Escuela que busca engañar a los
+                            sentidos y convencerlos de lo extraordinario. De nuevo, es una escuela mas centrada en lo
+                            que ocurre fuera del combate y un buen ejemplo de esto son los hechizos de Invisibilidad,
+                            Disfrazarse, Espejismo, Silencio, Simulacro... Todos ellos buscan alterar la realidad para
+                            afectar a los sentidos, ocultando, camuflando y engañando a los sentidos.</div>
+                    </li>
+                    <li>
+                        <div id="nig" class="boton" onclick="mostrarInformacion('opcion7')">Nigromancia</div>
+                        <div id="opcion7" class="informacion">La Nigromancia es la escuela que se dedica a tratar la
+                            muerte y la decadencia, la podredumbre y debilidad de la carne. En contra de lo que pueda
+                            parecer, no es una disciplina maligna, aunque es cierto que la tendencia es mostrar a los
+                            nigromantes como lideres de ejercitos de muertos y que disfrutan agostando a sus
+                            adversarios, arrebatandoles su energia vital.</div>
+                    </li>
+                    <li>
+                        <div id="trans" class="boton" onclick="mostrarInformacion('opcion8')">Transmutacion</div>
+                        <div id="opcion8" class="informacion">La escuela de la Transmutacion es la ultima de la escuelas
+                            de magia de Dungeons & Dragons. Con Transmutacion el lanzador de conjuros es capaz de
+                            alterar la naturaleza fisica de las cosas, de cambiar su forma, color, naturaleza e incluso
+                            de afectar el mismo tiempo.</div>
+                    </li>
+                </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Natalia Amparan Ibarra</p>
+        <br>
+        <p>Matricula: 222435</p>
+    </footer>
+</body>
+
+</html>
